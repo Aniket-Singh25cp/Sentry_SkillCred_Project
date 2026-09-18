@@ -1,0 +1,142 @@
+{
+  "request_id": "req_01J9ABCDE",
+  "asset_id": "PUMP-07",
+  "measured_facts": [
+    {
+      "statement": "Error code E-204: Lubrication pressure low.",
+      "source": "error_code_lookup",
+      "sensor": null
+    },
+    {
+      "statement": "Drive-end bearing temperature is 91.4 C against a normal range of 55-75 C (z = 4.82, alarm band).",
+      "source": "sensor_engine",
+      "sensor": "bearing_temp_de"
+    },
+    {
+      "statement": "Vibration RMS is 8.1 mm/s against a normal range of 0-4.5 mm/s (z = 5.40, alarm band).",
+      "source": "sensor_engine",
+      "sensor": "vibration_rms"
+    }
+  ],
+  "manual_instructions": [
+    {
+      "step": "De-energize the motor and apply lockout/tagout before removing the coupling guard.",
+      "verbatim_safety": true,
+      "citation": {
+        "chunk_id": "a1f9c2d40b77",
+        "doc_title": "CP-450 Centrifugal Pump Service Manual",
+        "revision": "Rev C, 2023-08",
+        "section": "7. Troubleshooting > 7.3 Excessive Vibration",
+        "page": 61
+      }
+    },
+    {
+      "step": "Inspect the lubrication line and verify pressure gauge reading at test port TP-2.",
+      "verbatim_safety": false,
+      "citation": {
+        "chunk_id": "9b3e1c7a55d2",
+        "doc_title": "CP-450 Centrifugal Pump Service Manual",
+        "revision": "Rev C, 2023-08",
+        "section": "5. Lubrication Maintenance",
+        "page": 44
+      }
+    }
+  ],
+  "inspection_checklist": [
+    {
+      "order": 1,
+      "action": "Apply LOTO to the motor starter and verify zero-energy state.",
+      "expected_observation": "Zero voltage measured across all line and load terminals.",
+      "if_abnormal_then": "Stop immediately. Escalate to qualified plant electrician.",
+      "tools_required": [
+        "LOTO lock and tag",
+        "Calibrated voltage tester",
+        "Category III PPE"
+      ],
+      "est_minutes": 5,
+      "is_safety_critical": true,
+      "citation": {
+        "chunk_id": "a1f9c2d40b77",
+        "doc_title": "CP-450 Centrifugal Pump Service Manual",
+        "revision": "Rev C, 2023-08",
+        "section": "7. Troubleshooting > 7.3 Excessive Vibration",
+        "page": 61
+      }
+    },
+    {
+      "order": 2,
+      "action": "Inspect drive-end bearing housing for oil discolouration or leaks.",
+      "expected_observation": "Clean oil level within sight glass indicators without foaming.",
+      "if_abnormal_then": "Sample oil for particulate contamination and check filter differential.",
+      "tools_required": [
+        "Inspection torch",
+        "Clean sampling bottle"
+      ],
+      "est_minutes": 10,
+      "is_safety_critical": false,
+      "citation": {
+        "chunk_id": "9b3e1c7a55d2",
+        "doc_title": "CP-450 Centrifugal Pump Service Manual",
+        "revision": "Rev C, 2023-08",
+        "section": "5. Lubrication Maintenance",
+        "page": 44
+      }
+    },
+    {
+      "order": 3,
+      "action": "Verify lubrication delivery pressure at test port TP-2 using a calibrated gauge.",
+      "expected_observation": "Lube oil pressure between 2.2 and 2.8 bar under priming cycle.",
+      "if_abnormal_then": "Inspect auxiliary lube pump and clean suction strainer.",
+      "tools_required": [
+        "0-10 bar calibrated pressure gauge",
+        "Quick-connect fitting"
+      ],
+      "est_minutes": 15,
+      "is_safety_critical": false,
+      "citation": {
+        "chunk_id": "9b3e1c7a55d2",
+        "doc_title": "CP-450 Centrifugal Pump Service Manual",
+        "revision": "Rev C, 2023-08",
+        "section": "5. Lubrication Maintenance",
+        "page": 45
+      }
+    }
+  ],
+  "hypotheses": [
+    {
+      "rank": 1,
+      "cause": "Drive-end bearing lubrication starvation leading to elevated thermal stress and vibration.",
+      "confidence": "high",
+      "confidence_score": 0.82,
+      "supporting_sensors": [
+        "bearing_temp_de",
+        "vibration_rms"
+      ],
+      "supporting_chunks": [
+        "a1f9c2d40b77",
+        "9b3e1c7a55d2"
+      ],
+      "discriminating_check": "Verify oil delivery pressure at test port TP-2 and inspect oil filter differential."
+    }
+  ],
+  "retrieval_status": "sufficient",
+  "refusal": null,
+  "guardrails": {
+    "passed": [
+      "citation",
+      "safety",
+      "numeric"
+    ],
+    "failed": [],
+    "dropped_steps": 0,
+    "notes": "Pre-guardrail synthesis complete; emitted for S6 validation."
+  },
+  "meta": {
+    "prompt_version": "v1.0.0",
+    "model": "claude-3-5-sonnet-20241022",
+    "retriever": "hybrid+rerank",
+    "chunks_retrieved": 6,
+    "latency_ms": 3410,
+    "corpus_revision": "rev_c_2023-08"
+  }
+}
