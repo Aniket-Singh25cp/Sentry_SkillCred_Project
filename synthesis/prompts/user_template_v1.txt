@@ -1,0 +1,16 @@
+# VERSION: v1.0.0
+USER
+<measured_facts>
+{measured_facts}
+</measured_facts>
+<asset_context>
+Asset ID: {asset_id}
+Asset Class: {asset_class}
+Days Since Service: {days_since_service}
+Recent Faults / Error Code: {error_code_info}
+Recent Parts Replaced: {recent_parts}
+Signatures: {signatures}
+</asset_context>
+<retrieved_documents>
+{retrieved_documents}
+</retrieved_documents>
