@@ -1,0 +1,19 @@
+# config.yaml — SENTRY runtime configuration defaults
+#
+# This file provides yaml-layer defaults.  Environment variables (SENTRY_*)
+# take precedence over all values here (see core/config.py for the precedence
+# rules).
+#
+# DO NOT put secrets, credentials, or DSNs in this file.  Those belong
+# exclusively in environment variables (or a secrets manager at deploy time).
+#
+# Feature flags
+retriever: hybrid          # tfidf | bm25 | dense | hybrid
+use_reranker: true
+use_anomaly_model: false
+llm_provider: anthropic    # anthropic | ollama | vllm
+relevance_floor: 0.35
+max_chunks_to_llm: 6
+
+# Infrastructure URLs are intentionally absent here.
+# Set SENTRY_DATABASE_URL, SENTRY_REDIS_URL, SENTRY_QDRANT_URL in env.

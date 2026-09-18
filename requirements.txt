@@ -1,0 +1,9 @@
+# SENTRY P0 — Shared Contracts
+# Install with: pip install -r requirements.txt
+pydantic>=2.5
+pydantic-settings>=2.0
+structlog>=24.0
+pyyaml>=6.0
+pytest>=8.0
+mypy>=1.8
+ruff>=0.3
