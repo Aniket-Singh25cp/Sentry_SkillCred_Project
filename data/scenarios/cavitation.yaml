@@ -1,0 +1,43 @@
+scenario_id: cavitation
+description: >
+  PUMP-03 is operating with insufficient net positive suction head available (NPSHa).
+  Suction pressure has dropped to critically low levels. Discharge pressure and flow rate
+  are substantially reduced. The pump emits an audible cracking/rattling noise consistent
+  with vapour bubble collapse at the impeller eye. Error code E-102 is active.
+
+asset_id: PUMP-03
+asset_class: centrifugal_pump
+error_code: E-102
+
+input_snapshot:
+  vibration_rms: 5.1
+  bearing_temp_de: 66.0
+  bearing_temp_nde: 61.5
+  motor_current: 36.0
+  discharge_pressure: 3.6
+  flow_rate: 97.0
+  oil_level_pct: 74.0
+  rpm: 2945.0
+  suction_pressure: 0.16
+
+expected_deviations:
+  - sensor: suction_pressure
+    expected_band: alarm
+  - sensor: discharge_pressure
+    expected_band: alarm
+  - sensor: flow_rate
+    expected_band: alarm
+  - sensor: vibration_rms
+    expected_band: warn
+
+gold_chunk_sections:
+  - ["7. Troubleshooting", "7.1 Reduced Flow or Pressure"]
+  - ["4. Operation", "4.3 Priming and Suction Requirements"]
+  - ["8. Error Code Reference Table"]
+
+required_safety_strings:
+  - "CAUTION: The minimum net positive suction head available (NPSHa) must exceed the pump's NPSHr by at least 0.5 m at all operating conditions. Operating with insufficient NPSH will cause cavitation, which erodes the impeller and produces a characteristic erratic vibration and cracking/popping noise (error code E-102)."
+
+expected_top_hypothesis: "Cavitation due to insufficient suction pressure (NPSHa below NPSHr), causing impeller erosion and reduced hydraulic performance"
+
+expects_refusal: false

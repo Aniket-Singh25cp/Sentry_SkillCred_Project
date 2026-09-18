@@ -1,0 +1,518 @@
+[
+  {
+    "chunk_id": "c07043a488e6",
+    "doc_id": "cp450_pump_manual",
+    "doc_title": "CP-450 Centrifugal Pump Service Manual, Rev C",
+    "revision": "Rev C",
+    "section_path": [],
+    "page_start": 1,
+    "page_end": 1,
+    "text": "CP-450 Centrifugal Pump Service Manual, Rev C\n\n**Document Number:** MAN-CP450-SVC-C **Revision:** Rev C **Issue Date:** 2024-03-15 **Supersedes:** Rev B (2021-09-01) **Asset Class:** centrifugal_pump **Applicable Models:** CP-450, CP-460 **Manufacturer:** Synthetix Fluid Systems Ltd. **Status:** Approved for Production Use\n\n> **NOTICE:** This manual must be available to all personnel responsible for installing, operating, or maintaining the CP-450 series centrifugal pump. The manual must be kept in legible condition and stored near the equipment.",
+    "chunk_type": "warning",
+    "has_safety": true,
+    "safety_notes": [
+      {
+        "text": "NOTICE: This manual must be available to all personnel responsible for installing, operating, or maintaining the CP-450 series centrifugal pump. The manual must be kept in legible condition and stored near the equipment.",
+        "severity": "notice"
+      },
+      {
+        "text": "**Status:** Approved for Production Use\n\n> **NOTICE:** This manual must be available to all personnel responsible for installing, operating, or maintaining the CP-450 series centrifugal pump.",
+        "severity": "notice"
+      }
+    ],
+    "asset_class": "centrifugal_pump",
+    "applicable_models": [
+      "CP-450",
+      "CP-460"
+    ],
+    "token_count": 139
+  },
+  {
+    "chunk_id": "149906e3174d",
+    "doc_id": "cp450_pump_manual",
+    "doc_title": "CP-450 Centrifugal Pump Service Manual, Rev C",
+    "revision": "Rev C",
+    "section_path": [
+      "1. Introduction and Safety Information",
+      "1.2 Safety Signal Words"
+    ],
+    "page_start": 1,
+    "page_end": 2,
+    "text": "1.2 Safety Signal Words\n\nThis manual uses the following signal words in accordance with ANSI Z535 and ISO 3864-2:\n\n| Signal Word | Meaning |\n|---|---|\n| **DANGER** | Indicates an imminently hazardous situation which, if not avoided, **will result in death or serious injury**. |\n| **WARNING** | Indicates a potentially hazardous situation which, if not avoided, **could result in death or serious injury**. |\n| **CAUTION** | Indicates a potentially hazardous situation which, if not avoided, **may result in minor or moderate injury**, or damage to equipment. |\n| **NOTICE** | Indicates information considered important for correct operation but not hazard-related. |\n\n> **DANGER:** Never operate the pump against a closed discharge valve for more than 30 seconds. Recirculation heating will raise fluid temperature rapidly, resulting in flash vaporisation and potentially explosive release of pressurised vapour.\n\n> **WARNING:** The CP-450 operates at shaft speeds up to 3 000 RPM. All rotating guards must be fitted and secured before starting the pump. Contact with unguarded rotating parts can cause severe laceration, degloving, or limb loss.\n\n> **CAUTION:** Pumps in water service at ambient temperatures below 5 \u00b0C must be drained when not in service to prevent freeze damage to the casing, impeller, and mechanical seal.\n\n> **NOTICE:** Synthetix Fluid Systems Ltd. accepts no liability for damage or injury resulting from operation outside the conditions stated on the pump nameplate or in this manual.",
+    "chunk_type": "description",
+    "has_safety": true,
+    "safety_notes": [
+      {
+        "text": "DANGER: Never operate the pump against a closed discharge valve for more than 30 seconds. Recirculation heating will raise fluid temperature rapidly, resulting in flash vaporisation and potentially explosive release of pressurised vapour.",
+        "severity": "danger"
+      },
+      {
+        "text": "WARNING: The CP-450 operates at shaft speeds up to 3 000 RPM. All rotating guards must be fitted and secured before starting the pump. Contact with unguarded rotating parts can cause severe laceration, degloving, or limb loss.",
+        "severity": "warning"
+      },
+      {
+        "text": "CAUTION: Pumps in water service at ambient temperatures below 5 \u00b0C must be drained when not in service to prevent freeze damage to the casing, impeller, and mechanical seal.",
+        "severity": "caution"
+      },
+      {
+        "text": "NOTICE: Synthetix Fluid Systems Ltd. accepts no liability for damage or injury resulting from operation outside the conditions stated on the pump nameplate or in this manual.",
+        "severity": "notice"
+      },
+      {
+        "text": "1.2 Safety Signal Words\n\nThis manual uses the following signal words in accordance with ANSI Z535 and ISO 3864-2:\n\n| Signal Word | Meaning |\n|---|---|\n| **DANGER** | Indicates an imminently hazardous situation which, if not avoided, **will result in death or serious injury**.",
+        "severity": "danger"
+      },
+      {
+        "text": "|\n| **WARNING** | Indicates a potentially hazardous situation which, if not avoided, **could result in death or serious injury**.",
+        "severity": "warning"
+      },
+      {
+        "text": "|\n| **CAUTION** | Indicates a potentially hazardous situation which, if not avoided, **may result in minor or moderate injury**, or damage to equipment.",
+        "severity": "caution"
+      },
+      {
+        "text": "|\n| **NOTICE** | Indicates information considered important for correct operation but not hazard-related.",
+        "severity": "notice"
+      },
+      {
+        "text": "|\n\n> **DANGER:** Never operate the pump against a closed discharge valve for more than 30 seconds.",
+        "severity": "danger"
+      },
+      {
+        "text": "WARNING: The CP-450 operates at shaft speeds up to 3 000 RPM.",
+        "severity": "warning"
+      },
+      {
+        "text": "NOTICE: Synthetix Fluid Systems Ltd.",
+        "severity": "notice"
+      }
+    ],
+    "asset_class": "centrifugal_pump",
+    "applicable_models": [
+      "CP-450",
+      "CP-460"
+    ],
+    "token_count": 325
+  },
+  {
+    "chunk_id": "8babf09c17eb",
+    "doc_id": "cp450_pump_manual",
+    "doc_title": "CP-450 Centrifugal Pump Service Manual, Rev C",
+    "revision": "Rev C",
+    "section_path": [
+      "1. Introduction and Safety Information",
+      "1.3 Intended Use and Limitations"
+    ],
+    "page_start": 2,
+    "page_end": 2,
+    "text": "1.3 Intended Use and Limitations\n\nThe CP-450 is a decision-support tool for qualified maintenance technicians. It must not be used as the sole determinant for safety-critical actions; all procedures must be performed by personnel holding the relevant competency qualifications for mechanical and electrical work on rotating equipment.\n\n**Operator qualification requirements:** - Mechanical technician: NVQ Level 3 or equivalent in mechanical engineering maintenance, or demonstrated competency verified by a Responsible Person. - Electrical technician: Authorised Person for LV systems per the Electricity at Work Regulations 1989 (or local equivalent). - LOTO: All personnel performing maintenance on energised systems must hold a current Lockout/Tagout authorisation card, renewed annually.",
+    "chunk_type": "description",
+    "has_safety": true,
+    "safety_notes": [
+      {
+        "text": "- LOTO: All personnel performing maintenance on energised systems must hold a current Lockout/Tagout authorisation card, renewed annually.",
+        "severity": "warning"
+      }
+    ],
+    "asset_class": "centrifugal_pump",
+    "applicable_models": [
+      "CP-450",
+      "CP-460"
+    ],
+    "token_count": 142
+  },
+  {
+    "chunk_id": "77d815fe0d30",
+    "doc_id": "cp450_pump_manual",
+    "doc_title": "CP-450 Centrifugal Pump Service Manual, Rev C",
+    "revision": "Rev C",
+    "section_path": [
+      "2. Technical Specifications",
+      "2.2 Torque and Fastener Specifications"
+    ],
+    "page_start": 3,
+    "page_end": 3,
+    "text": "2.2 Torque and Fastener Specifications\n\n> **CAUTION:** Never use impact tools on bearing housing or seal gland fasteners. Impact loading may crack the cast-iron housing or damage the sealing face. Use calibrated torque wrenches only.\n\n| Location | Fastener Size | Torque (Nm) | Lubrication |\n|---|---|---|---|\n| Suction flange (DN150, PN16) | M20 \u00d7 8 off | 90\u2013100 | None (dry) |\n| Discharge flange (DN100, PN16) | M16 \u00d7 8 off | 60\u201370 | None (dry) |\n| Bearing housing to frame bolts | M16 \u00d7 4 off | 120\u2013130 | Light oil |\n| Bearing cover plate bolts | M10 \u00d7 6 off | 45\u201350 | Light oil |\n| Impeller lock nut (LH thread) | M30 LH | 130\u2013145 | Molykote\u00ae G-n Plus |\n| Coupling half to shaft | M12 \u00d7 4 off | 55\u201360 | None (dry) |\n| Motor foot bolts | M16 \u00d7 4 off | 120\u2013130 | None (dry) |\n| Seal gland plate screws | M8 \u00d7 4 off | 12\u201315 | None (dry) |\n| Casing wear ring retaining screws | M6 \u00d7 6 off | 8\u201310 | Loctite 243 |\n| Suction strainer flange bolts | M16 \u00d7 4 off | 60\u201370 | None (dry) |\n| Drain plug (1/2\" NPT) | \u2014 | 35\u201340 | PTFE tape |\n| Oil filler/vent plug (3/8\" BSP) | \u2014 | 20\u201325 | PTFE tape |",
+    "chunk_type": "table",
+    "has_safety": true,
+    "safety_notes": [
+      {
+        "text": "CAUTION: Never use impact tools on bearing housing or seal gland fasteners. Impact loading may crack the cast-iron housing or damage the sealing face. Use calibrated torque wrenches only.",
+        "severity": "caution"
+      },
+      {
+        "text": "2.2 Torque and Fastener Specifications\n\n> **CAUTION:** Never use impact tools on bearing housing or seal gland fasteners.",
+        "severity": "caution"
+      }
+    ],
+    "asset_class": "centrifugal_pump",
+    "applicable_models": [
+      "CP-450",
+      "CP-460"
+    ],
+    "token_count": 379
+  },
+  {
+    "chunk_id": "f1d64e13cac9",
+    "doc_id": "cp450_pump_manual",
+    "doc_title": "CP-450 Centrifugal Pump Service Manual, Rev C",
+    "revision": "Rev C",
+    "section_path": [
+      "3. Installation",
+      "3.1 Receiving and Inspection"
+    ],
+    "page_start": 4,
+    "page_end": 4,
+    "text": "3.1 Receiving and Inspection\n\nUpon delivery, inspect the pump-motor set for transit damage before signing the delivery note. The following checks must be performed:\n\n**Procedure 3.1-A \u2014 Receiving Inspection:**\n\n1. Verify the pump nameplate data (model, serial number, rated head, flow, and pressure) against the purchase order.\n\n2. Remove all transit covers from suction and discharge flanges. Inspect bore surfaces for damage, rust, or foreign material.\n\n3. Rotate the shaft by hand (after removing the coupling guard). The shaft should turn freely with no grinding, clicking, or axial resistance. Stiff rotation indicates bearing damage in transit.\n\n4. Check the oil level sight glass or dipstick on the bearing housing. The factory pre-fills the bearing housing with ISO VG 46 mineral oil to the centre of the sight glass. If the housing has been drained for freight, refill before commissioning (see Section 5.3).\n\n5. Inspect all painted surfaces and machined joint faces for rust. Treat any rust spots with rust-inhibiting primer before installation.\n\n6. Record the pump serial number, motor serial number, and date of receipt in the plant asset register.\n\n> **NOTICE:** Synthetix Fluid Systems Ltd. will not accept warranty claims for damage attributable to improper storage, handling, or installation unless the receiving inspection record is available.",
+    "chunk_type": "procedure",
+    "has_safety": true,
+    "safety_notes": [
+      {
+        "text": "NOTICE: Synthetix Fluid Systems Ltd. will not accept warranty claims for damage attributable to improper storage, handling, or installation unless the receiving inspection record is available.",
+        "severity": "notice"
+      },
+      {
+        "text": "NOTICE: Synthetix Fluid Systems Ltd.",
+        "severity": "notice"
+      }
+    ],
+    "asset_class": "centrifugal_pump",
+    "applicable_models": [
+      "CP-450",
+      "CP-460"
+    ],
+    "token_count": 284
+  },
+  {
+    "chunk_id": "f8a7e0d7a204",
+    "doc_id": "cp450_pump_manual",
+    "doc_title": "CP-450 Centrifugal Pump Service Manual, Rev C",
+    "revision": "Rev C",
+    "section_path": [
+      "3. Installation",
+      "3.3 Piping Connections"
+    ],
+    "page_start": 4,
+    "page_end": 5,
+    "text": "3.3 Piping Connections\n\n> **WARNING:** Piping must not impose forces or moments on the pump flanges that exceed the allowable nozzle loads stated in Table A3 of the pump data sheet. Excessive piping loads distort the casing, accelerate seal and bearing wear, and void the warranty.\n\nSuction piping must be designed to minimise friction losses and ensure the fluid arrives at the impeller without cavitation. Follow these rules:\n\n- The suction pipe diameter must be at least equal to the pump suction bore (DN150); a reducer must be eccentric, with the flat side uppermost, to avoid air pockets. - Maintain a minimum straight-run length of five pipe diameters upstream of the suction flange. - The suction strainer shall have a free area at least three times the pipe cross-section and shall include a differential pressure gauge connection across the element (see E-111 in Section 8). - Install a fully-open isolation valve on the suction and discharge sides. Both valves must be rated for the system design pressure. - Install a non-return (check) valve on the discharge side, between the pump and the discharge isolation valve, to prevent reverse flow on motor trip.",
+    "chunk_type": "description",
+    "has_safety": true,
+    "safety_notes": [
+      {
+        "text": "WARNING: Piping must not impose forces or moments on the pump flanges that exceed the allowable nozzle loads stated in Table A3 of the pump data sheet. Excessive piping loads distort the casing, accelerate seal and bearing wear, and void the warranty.",
+        "severity": "warning"
+      },
+      {
+        "text": "3.3 Piping Connections\n\n> **WARNING:** Piping must not impose forces or moments on the pump flanges that exceed the allowable nozzle loads stated in Table A3 of the pump data sheet.",
+        "severity": "warning"
+      }
+    ],
+    "asset_class": "centrifugal_pump",
+    "applicable_models": [
+      "CP-450",
+      "CP-460"
+    ],
+    "token_count": 238
+  },
+  {
+    "chunk_id": "7aece4fce654",
+    "doc_id": "cp450_pump_manual",
+    "doc_title": "CP-450 Centrifugal Pump Service Manual, Rev C",
+    "revision": "Rev C",
+    "section_path": [
+      "1. Introduction and Safety Information"
+    ],
+    "page_start": 1,
+    "page_end": 1,
+    "text": "1. Introduction and Safety Information",
+    "chunk_type": "description",
+    "has_safety": false,
+    "safety_notes": [],
+    "asset_class": "centrifugal_pump",
+    "applicable_models": [
+      "CP-450",
+      "CP-460"
+    ],
+    "token_count": 6
+  },
+  {
+    "chunk_id": "12e9aa18e685",
+    "doc_id": "cp450_pump_manual",
+    "doc_title": "CP-450 Centrifugal Pump Service Manual, Rev C",
+    "revision": "Rev C",
+    "section_path": [
+      "1. Introduction and Safety Information",
+      "1.1 Document Purpose and Scope"
+    ],
+    "page_start": 1,
+    "page_end": 1,
+    "text": "1.1 Document Purpose and Scope\n\nThis service manual covers the CP-450 and CP-460 series single-stage, end-suction centrifugal pumps manufactured by Synthetix Fluid Systems Ltd. It provides guidance for installation, commissioning, routine operation, preventive maintenance, and troubleshooting. The procedures in this manual apply to standard configurations; consult the factory for custom impeller sizes, high-temperature fluid service above 120 \u00b0C, or hazardous-area (ATEX) variants.\n\nThe CP-450 is designed for continuous-duty pumping of clean, low-viscosity liquids including water, light hydrocarbons, and aqueous process solutions with a maximum solids concentration of 0.1 % by mass and particle size below 200 \u00b5m. Pumping of abrasive slurries, fluids with suspended fibre, or liquefied gases requires a modified impeller and seal package \u2014 contact Synthetix Applications Engineering before attempting such service.",
+    "chunk_type": "description",
+    "has_safety": false,
+    "safety_notes": [],
+    "asset_class": "centrifugal_pump",
+    "applicable_models": [
+      "CP-450",
+      "CP-460"
+    ],
+    "token_count": 187
+  },
+  {
+    "chunk_id": "81b60a70ddab",
+    "doc_id": "cp450_pump_manual",
+    "doc_title": "CP-450 Centrifugal Pump Service Manual, Rev C",
+    "revision": "Rev C",
+    "section_path": [
+      "2. Technical Specifications"
+    ],
+    "page_start": 2,
+    "page_end": 2,
+    "text": "2. Technical Specifications",
+    "chunk_type": "description",
+    "has_safety": false,
+    "safety_notes": [],
+    "asset_class": "centrifugal_pump",
+    "applicable_models": [
+      "CP-450",
+      "CP-460"
+    ],
+    "token_count": 4
+  },
+  {
+    "chunk_id": "b007a6602447",
+    "doc_id": "cp450_pump_manual",
+    "doc_title": "CP-450 Centrifugal Pump Service Manual, Rev C",
+    "revision": "Rev C",
+    "section_path": [
+      "2. Technical Specifications",
+      "2.1 Performance Data"
+    ],
+    "page_start": 2,
+    "page_end": 2,
+    "text": "2.1 Performance Data\n\n| Parameter | Value | Unit |\n|---|---|---|\n| Rated flow (best efficiency point) | 185 | m\u00b3/h |\n| Maximum continuous flow | 245 | m\u00b3/h |\n| Minimum continuous flow | 80 | m\u00b3/h |\n| Rated head | 52 | m |\n| Maximum operating pressure (casing) | 16 | bar |\n| Design pressure (hydrostatic test) | 24 | bar |\n| Rated shaft speed (50 Hz) | 2 950 | RPM |\n| Motor rated power | 37 | kW |\n| Motor rated current (400 V, 3-phase) | 42 | A |\n| Motor frame | IEC 225M | \u2014 |\n| Suction nominal bore | DN 150 | \u2014 |\n| Discharge nominal bore | DN 100 | \u2014 |\n| Maximum fluid temperature | 120 | \u00b0C |\n| Minimum fluid temperature | \u221210 | \u00b0C |\n| Maximum fluid viscosity | 50 | cSt |\n| Design temperature (mechanical seal) | 90 | \u00b0C |\n| Maximum allowable working pressure (MAWP) | 12 | bar |\n| Hydrostatic test pressure | 18 | bar |",
+    "chunk_type": "table",
+    "has_safety": false,
+    "safety_notes": [],
+    "asset_class": "centrifugal_pump",
+    "applicable_models": [
+      "CP-450",
+      "CP-460"
+    ],
+    "token_count": 252
+  },
+  {
+    "chunk_id": "4f216dc7912c",
+    "doc_id": "cp450_pump_manual",
+    "doc_title": "CP-450 Centrifugal Pump Service Manual, Rev C",
+    "revision": "Rev C",
+    "section_path": [
+      "2. Technical Specifications",
+      "2.3 Fluid Compatibility"
+    ],
+    "page_start": 3,
+    "page_end": 3,
+    "text": "2.3 Fluid Compatibility\n\nThe standard CP-450 is compatible with clean water, cooling tower water, light fuel oil (ISO VG 32), and dilute aqueous acids/alkalis with pH 5\u201310. The mechanical seal is rated for continuous service up to 90 \u00b0C. For fluids outside these parameters, specify the appropriate seal material package (SiC/SiC, Hastelloy C, or PTFE bellows) at time of order.",
+    "chunk_type": "description",
+    "has_safety": false,
+    "safety_notes": [],
+    "asset_class": "centrifugal_pump",
+    "applicable_models": [
+      "CP-450",
+      "CP-460"
+    ],
+    "token_count": 97
+  },
+  {
+    "chunk_id": "ef08dd28d247",
+    "doc_id": "cp450_pump_manual",
+    "doc_title": "CP-450 Centrifugal Pump Service Manual, Rev C",
+    "revision": "Rev C",
+    "section_path": [
+      "3. Installation"
+    ],
+    "page_start": 4,
+    "page_end": 4,
+    "text": "3. Installation",
+    "chunk_type": "description",
+    "has_safety": false,
+    "safety_notes": [],
+    "asset_class": "centrifugal_pump",
+    "applicable_models": [
+      "CP-450",
+      "CP-460"
+    ],
+    "token_count": 3
+  },
+  {
+    "chunk_id": "c87a2d573ac8",
+    "doc_id": "cp450_pump_manual",
+    "doc_title": "CP-450 Centrifugal Pump Service Manual, Rev C",
+    "revision": "Rev C",
+    "section_path": [
+      "3. Installation",
+      "3.2 Foundation and Mounting"
+    ],
+    "page_start": 4,
+    "page_end": 4,
+    "text": "3.2 Foundation and Mounting\n\nThe CP-450 baseplate must be installed on a flat, rigid, vibration-damped concrete foundation or structural steel frame. Foundation sizing guidelines are given in the Installation Data Sheet (document IDS-CP450-C, supplied with each unit).\n\n**Procedure 3.2-A \u2014 Baseplate Levelling:**\n\n1. Clean the foundation surface and remove grout residue.\n\n2. Place the baseplate on levelling shims (stainless steel, min. 100 mm from each corner).\n\n3. Adjust shims until the baseplate is level in both axes to within 0.05 mm/m using a precision machinists' level.\n\n4. Tighten anchor bolts to 120 Nm in a cross pattern.\n\n5. Grout the void beneath the baseplate using non-shrink epoxy grout to a minimum depth of 25 mm. Allow to cure for the manufacturer's specified time (typically 72 h at 20 \u00b0C) before applying process loads.\n\n6. Re-check levelness after grout cure and before coupling alignment.",
+    "chunk_type": "procedure",
+    "has_safety": false,
+    "safety_notes": [],
+    "asset_class": "centrifugal_pump",
+    "applicable_models": [
+      "CP-450",
+      "CP-460"
+    ],
+    "token_count": 220
+  },
+  {
+    "chunk_id": "d0e2c3dd503d",
+    "doc_id": "cp450_pump_manual",
+    "doc_title": "CP-450 Centrifugal Pump Service Manual, Rev C",
+    "revision": "Rev C",
+    "section_path": [
+      "4. Operation"
+    ],
+    "page_start": 5,
+    "page_end": 5,
+    "text": "4. Operation",
+    "chunk_type": "description",
+    "has_safety": false,
+    "safety_notes": [],
+    "asset_class": "centrifugal_pump",
+    "applicable_models": [
+      "CP-450",
+      "CP-460"
+    ],
+    "token_count": 3
+  },
+  {
+    "chunk_id": "8a6278f9fc66",
+    "doc_id": "cp450_pump_manual",
+    "doc_title": "CP-450 Centrifugal Pump Service Manual, Rev C",
+    "revision": "Rev C",
+    "section_path": [
+      "4. Operation",
+      "4.2 Start-Up Procedure"
+    ],
+    "page_start": 6,
+    "page_end": 6,
+    "text": "4.2 Start-Up Procedure\n\n**Procedure 4.2-A \u2014 Standard Start-Up:**\n\n1. Confirm pre-start checklist (Section 4.1) is complete.\n\n2. Energise the motor. The motor must reach rated speed within 8 seconds; if it does not reach 2 800 RPM within this period, trip the starter and investigate.\n\n3. Immediately check suction pressure (should be \u2265 0.4 bar gauge). A suction pressure below 0.2 bar gauge indicates inadequate priming or a blocked suction strainer.\n\n4. Slowly open the discharge valve over approximately 30 seconds until the desired flow rate is reached. Opening too rapidly causes water hammer.\n\n5. Confirm discharge pressure is within the range 5.5\u20137.5 bar gauge at rated flow. Significant deviation indicates impeller wear, incorrect rotation, or a blocked impeller passage.\n\n6. Check motor current against rated value (42 A). Current above 50 A indicates overload; current below 35 A at rated flow indicates cavitation or a partially blocked suction.\n\n7. Observe the mechanical seal area. Occasional drips of clear fluid (up to 5 drops per minute) are acceptable for a packed gland; a cartridge mechanical seal should show zero leakage. Sustained leakage from a cartridge seal requires shut-down.\n\n8. Record all readings in the shift log: time, suction pressure, discharge pressure, flow, current, bearing temperatures, and vibration (if permanently monitored).",
+    "chunk_type": "procedure",
+    "has_safety": false,
+    "safety_notes": [],
+    "asset_class": "centrifugal_pump",
+    "applicable_models": [
+      "CP-450",
+      "CP-460"
+    ],
+    "token_count": 303
+  },
+  {
+    "chunk_id": "9649cb931aa7",
+    "doc_id": "cp450_pump_manual",
+    "doc_title": "CP-450 Centrifugal Pump Service Manual, Rev C",
+    "revision": "Rev C",
+    "section_path": [
+      "5. Maintenance"
+    ],
+    "page_start": 7,
+    "page_end": 7,
+    "text": "5. Maintenance",
+    "chunk_type": "description",
+    "has_safety": false,
+    "safety_notes": [],
+    "asset_class": "centrifugal_pump",
+    "applicable_models": [
+      "CP-450",
+      "CP-460"
+    ],
+    "token_count": 3
+  },
+  {
+    "chunk_id": "ee7a1c573918",
+    "doc_id": "cp450_pump_manual",
+    "doc_title": "CP-450 Centrifugal Pump Service Manual, Rev C",
+    "revision": "Rev C",
+    "section_path": [
+      "5. Maintenance",
+      "5.1 Preventive Maintenance Schedule"
+    ],
+    "page_start": 7,
+    "page_end": 7,
+    "text": "5.1 Preventive Maintenance Schedule\n\n| Interval | Task | Reference Procedure |\n|---|---|---|\n| Daily | Check oil level, check for leakage, check bearing temperatures | 4.1 |\n| Weekly | Inspect coupling for wear, check strainer differential pressure | 5.5 |\n| Monthly | Grease coupling (if grease-lubricated type), check alignment TIR | 5.4 |\n| 3-monthly | Change bearing lubricating oil, inspect seal, check motor current | 5.3, 5.6 |\n| 6-monthly | Full vibration baseline measurement, inspect impeller clearance | \u2014 |\n| Annually | Bearing inspection and replacement if needed, alignment verification | 5.2, 5.4 |\n| 3-yearly | Major overhaul: impeller, wear rings, casing inspection | Workshop manual |",
+    "chunk_type": "table",
+    "has_safety": false,
+    "safety_notes": [],
+    "asset_class": "centrifugal_pump",
+    "applicable_models": [
+      "CP-450",
+      "CP-460"
+    ],
+    "token_count": 180
+  },
+  {
+    "chunk_id": "5a3e55dde0d4",
+    "doc_id": "cp450_pump_manual",
+    "doc_title": "CP-450 Centrifugal Pump Service Manual, Rev C",
+    "revision": "Rev C",
+    "section_path": [
+      "6. Electrical Procedures"
+    ],
+    "page_start": 11,
+    "page_end": 11,
+    "text": "6. Electrical Procedures",
+    "chunk_type": "procedure",
+    "has_safety": false,
+    "safety_notes": [],
+    "asset_class": "centrifugal_pump",
+    "applicable_models": [
+      "CP-450",
+      "CP-460"
+    ],
+    "token_count": 4
+  },
+  {
+    "chunk_id": "1baa0841bcbc",
+    "doc_id": "cp450_pump_manual",
+    "doc_title": "CP-450 Centrifugal Pump Service Manual, Rev C",
+    "revision": "Rev C",
+    "section_path": [
+      "7. Troubleshooting",
+      "7.1 Reduced Flow or Pressure"
+    ],
+    "page_start": 12,
+    "page_end": 13,
+    "text": "7.1 Reduced Flow or Pressure\n\n**Associated error codes:** E-104, E-109, E-102\n\n**Symptom:** The pump is running (motor current normal or reduced), but flow or discharge pressure is below the expected operating point. The technician may observe low flow alarm on the process flow meter.\n\n**Diagnostic procedure:**\n\n1. Read suction pressure at the pump suction gauge (should be \u2265 0.4 bar gauge at rated conditions). If suction pressure is low (below 0.2 bar gauge or below the NPSHa threshold for this installation), proceed to Step 2. If suction pressure is normal, proceed to Step 5.\n\n2. Check the suction isolation valve is fully open. A partially open valve throttles suction flow and reduces performance.\n\n3. Check the suction strainer differential pressure (\u0394P). A \u0394P above 0.3 bar indicates a partially blocked strainer; service per Section 5.5.\n\n4. Vent the pump casing. Air trapped in the casing reduces effective impeller area and causes erratic performance. Open the casing vent plug for 3\u20135 seconds. If a rush of air or vapour is observed, the pump has lost its prime; re-prime per Section 4.3.\n\n5. Check motor current against rated value. If motor current is significantly below rated (below 35 A at expected operating point), impeller wear may be causing performance reduction. Measure discharge pressure against the pump performance curve at the operating speed.\n\n6. If motor current is above rated (above 50 A), the pump is running in an overloaded condition, possibly at a flow point beyond the best efficiency point (BEP). Throttle the discharge valve slightly and recheck.\n\n7. Inspect the discharge check valve. A failed-open check valve allows backflow through the pump when a parallel pump is running; this can cause one pump to appear to be producing zero net flow.\n\n**Cavitation diagnosis:**\n\nIf the pump emits a cracking, popping, or rattling noise during the above investigation, and suction pressure is low, cavitation is the probable cause (error code E-102). Confirm by: - Comparing suction pressure with the NPSHr from the pump curve at the operating flow. - Examining the impeller suction face (requires pump disassembly) for erosion pitting or cratering. - Checking for vapour in the suction line (flash from a hot fluid source, dissolved gas release, or vortex at an open sump).\n\n**Remedial actions for cavitation:**\n\n- Raise the liquid level in the suction vessel. - Fully open the suction valve and remove any restrictions. - Reduce the flow rate by partially closing the discharge valve. - Cool the suction fluid if flash vaporisation is occurring. - Increase the suction pipe diameter or reduce bends in the suction line.",
+    "chunk_type": "procedure",
+    "has_safety": false,
+    "safety_notes": [],
+    "asset_class": "centrifugal_pump",
+    "applicable_models": [
+      "CP-450",
+      "CP-460"
+    ],
+    "token_count": 582
+  },
+  {
+    "chunk_id": "93856022e9c1",
+    "doc_id": "cp450_pump_manual",
+    "doc_title": "CP-450 Centrifugal Pump Service Manual, Rev C",
+    "revision": "Rev C",
+    "section_path": [
+      "8. Error Code Reference Table"
+    ],
+    "page_start": 16,
+    "page_end": 16,
+    "text": "8. Error Code Reference Table\n\nThe following error codes are generated by the Motor Control Panel (MCP) and/or the SCADA system. All codes are latching and must be cleared manually after the fault condition is resolved.\n\n| Code | Meaning | Probable Causes | Cross-Reference |\n|---|---|---|---|\n| E-101 | Suction pressure low \u2014 warning | Suction valve partially closed, strainer partially clogged, pipe restriction | Section 7.1 |\n| E-102 | Cavitation detected | Insufficient NPSH, suction pipe vapour lock, high fluid temperature, low suction pressure | Section 7.1 |\n| E-103 | Discharge pressure high \u2014 alarm | Closed or restricted discharge valve, blocked discharge pipe, downstream valve closed | Section 4.2, 4.4 |\n| E-104 | Discharge pressure low \u2014 warning | Impeller wear, incorrect rotation, cavitation, coupling failure | Section 7.1 |\n| E-105 | Shaft vibration \u2014 misalignment signature | Shaft misalignment after maintenance, worn coupling insert, soft-foot | Section 7.2 |\n| E-106 | Suction fluid temperature high | Process temperature excursion upstream; check source | Section 4.3 |\n| E-107 | Drive-end bearing vibration \u2014 alarm | Bearing degradation, spalling, contaminated lubricant, incorrect preload | Section 7.3 |\n| E-108 | Non-drive-end bearing vibration \u2014 alarm | Same as E-107 for non-drive-end bearing | Section 7.3 |\n| E-109 | Flow rate low \u2014 alarm | Suction restriction, impeller wear, cavitation, closed discharge | Section 7.1 |\n| E-110 | Flow rate high \u2014 alarm | Operating beyond BEP; cavitation risk at high flow; valve misoperation | Section 4.2 |\n| E-111 | Suction strainer \u0394P high | Clogged strainer element, debris ingestion, biological fouling | Section 7.6, 5.5 |\n| E-112 | Mechanical seal leak detected | Seal face contamination, thermal shock, loss of flush, end-of-service-life | Section 5.6 |\n| E-201 | Drive-end bearing temperature \u2014 warning | Low oil, incorrect oil grade, bearing wear beginning | Section 7.4, 5.3 |\n| E-202 | Non-drive-end bearing temperature \u2014 warning | Same as E-201 for non-drive-end | Section 7.4 |\n| E-203 | Drive-end bearing temperature \u2014 alarm | Severe lubrication failure, bearing imminent failure | Section 7.3, 7.4 |\n| E-204 | Lubrication pressure / oil level low | Oil loss through seal leak, drain plug loose, extended interval without top-up | Section 5.3 |\n| E-205 | Bearing oil temperature high | Incorrect oil grade, foaming, blocked oil passage | Section 5.3 |\n| E-301 | Motor current high \u2014 overload trip | Mechanical seizure, impeller clog, high fluid density, overloaded operating point | Section 7.5 |\n| E-302 | Motor current low \u2014 phase loss | Blown fuse, open contactor, cable fault | Section 7.5, 6.3 |\n| E-303 | Phase imbalance detected | Unbalanced supply voltage, loose terminal connection | Section 7.5, 6.3 |\n| E-304 | Motor thermal protection trip | Sustained overload, high ambient, blocked cooling fan | Section 7.5 |\n| E-305 | Motor starter fault | Contactor mechanical fault, coil failure, control circuit fault | Section 6.1 |",
+    "chunk_type": "table",
+    "has_safety": false,
+    "safety_notes": [],
+    "asset_class": "centrifugal_pump",
+    "applicable_models": [
+      "CP-450",
+      "CP-460"
+    ],
+    "token_count": 765
+  }
+]

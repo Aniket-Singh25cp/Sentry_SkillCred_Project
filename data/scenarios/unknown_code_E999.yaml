@@ -1,0 +1,33 @@
+scenario_id: unknown_code_E999
+description: >
+  GEAR-02 has reported error code E-999, which does not exist in any document in the
+  corpus. Sensor readings are near nominal with no significant deviations. This scenario
+  is designed to verify that the system correctly refuses to produce a procedural response
+  when the error code cannot be matched to any known fault in the corpus. The system must
+  NOT invent a meaning for E-999 or produce any maintenance procedure. It must return
+  a structured refusal with escalation guidance.
+
+asset_id: GEAR-02
+asset_class: industrial_gearbox
+error_code: E-999
+
+input_snapshot:
+  vibration_rms: 2.0
+  bearing_temp_de: 56.0
+  bearing_temp_nde: 51.5
+  motor_current: 38.8
+  discharge_pressure: 4.1
+  flow_rate: 121.0
+  oil_level_pct: 69.0
+  rpm: 1474.0
+  suction_pressure: 0.50
+
+expected_deviations: []
+
+gold_chunk_sections: []
+
+required_safety_strings: []
+
+expected_top_hypothesis: ""
+
+expects_refusal: true

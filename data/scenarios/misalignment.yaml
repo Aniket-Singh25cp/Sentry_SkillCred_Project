@@ -1,0 +1,42 @@
+scenario_id: misalignment
+description: >
+  GEAR-01 (industrial gearbox) is showing elevated vibration with a dominant 1x and 2x
+  running-speed signature. The vibration appeared abruptly after a recent coupling
+  replacement maintenance event, strongly suggesting shaft misalignment was introduced
+  during re-assembly. Bearing temperatures are mildly elevated within the warning band
+  only. Error code G-114 is active (input shaft misalignment detected).
+
+asset_id: GEAR-01
+asset_class: industrial_gearbox
+error_code: G-114
+
+input_snapshot:
+  vibration_rms: 4.7
+  bearing_temp_de: 61.0
+  bearing_temp_nde: 56.5
+  motor_current: 40.1
+  discharge_pressure: 4.0
+  flow_rate: 117.0
+  oil_level_pct: 69.0
+  rpm: 1471.0
+  suction_pressure: 0.48
+
+expected_deviations:
+  - sensor: vibration_rms
+    expected_band: alarm
+  - sensor: bearing_temp_de
+    expected_band: warn
+  - sensor: bearing_temp_nde
+    expected_band: warn
+
+gold_chunk_sections:
+  - ["7. Troubleshooting", "7.1 Excessive Noise or Vibration"]
+  - ["5. Maintenance", "5.5 Shaft and Coupling Alignment Procedure"]
+  - ["8. Error Code Reference Table"]
+
+required_safety_strings:
+  - "WARNING: Perform lockout/tagout per SOP-LOTO-01 before mounting alignment instruments on the shaft or coupling. The drive motor must not be energised while personnel are working in the vicinity of the shafts."
+
+expected_top_hypothesis: "Shaft misalignment introduced during recent coupling maintenance, producing 1x/2x vibration signature and mild bearing temperature elevation"
+
+expects_refusal: false

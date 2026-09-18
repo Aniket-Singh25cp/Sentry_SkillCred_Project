@@ -1,0 +1,47 @@
+{
+  "timestamp": "2026-09-18T08:33:55.358256+00:00",
+  "corpus_path": "C:\\Users\\Acer\\Bootcamp\\Sentry_SkillCred_Project\\data\\corpus",
+  "corpus_revision": "dec2bc69fea702d2",
+  "embedding_model": "BAAI/bge-small-en-v1.5",
+  "embedding_dim": 384,
+  "total_chunks": 103,
+  "safety_chunks": 62,
+  "oversized_chunks": 0,
+  "flagged_chunks": 0,
+  "error_codes_count": 45,
+  "specs_count": 54,
+  "documents": {
+    "cp450_pump_manual.md": {
+      "doc_id": "cp450_pump_manual",
+      "hash": "e5bdee5c370413c882cc6dfa80fcac28cd95fec83ea46ec40dc8599d01484b6c",
+      "chunks": 41,
+      "safety_chunks": 26,
+      "error_codes": 22,
+      "specs": 30
+    },
+    "gb200_gearbox_manual.md": {
+      "doc_id": "gb200_gearbox_manual",
+      "hash": "b6aa6d9e53ef5853b553ea6620eaab351c42ec1e4890fda640a50cec41e6bf3e",
+      "chunks": 31,
+      "safety_chunks": 14,
+      "error_codes": 23,
+      "specs": 24
+    },
+    "sop_loto_01.md": {
+      "doc_id": "sop_loto_01",
+      "hash": "421378704206e39393360dfd250680f5943ec9d824673a98d426eb14e47423c4",
+      "chunks": 18,
+      "safety_chunks": 17,
+      "error_codes": 0,
+      "specs": 0
+    },
+    "sop_lub_01.md": {
+      "doc_id": "sop_lub_01",
+      "hash": "0aea63f98c73f83c85a9563697e54c1385c6f3db6f206efeb1563c51da468628",
+      "chunks": 13,
+      "safety_chunks": 5,
+      "error_codes": 0,
+      "specs": 0
+    }
+  }
+}
