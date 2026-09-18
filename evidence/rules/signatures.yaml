@@ -1,0 +1,43 @@
+# declarative cross-sensor correlation rules for SENTRY evidence engine (R2.5)
+# HEURISTIC HINTS ONLY — used as retrieval hints downstream, never presented as measured facts.
+
+rules:
+  - id: R-014
+    name: bearing_distress
+    when:
+      - vibration_rms.band in [warn, alarm]
+      - bearing_temp_de.band in [warn, alarm]
+    confidence: 0.80
+
+  - id: R-015
+    name: cavitation
+    when:
+      - discharge_pressure.band in [warn, alarm]
+      - flow_rate.band in [warn, alarm]
+    confidence: 0.85
+
+  - id: R-016
+    name: motor_overload
+    when:
+      - motor_current.band in [warn, alarm]
+    confidence: 0.75
+
+  - id: R-017
+    name: lubrication_failure
+    when:
+      - oil_level_pct.band in [warn, alarm]
+      - bearing_temp_de.band in [warn, alarm]
+    confidence: 0.90
+
+  - id: R-018
+    name: misalignment
+    when:
+      - vibration_rms.band in [warn, alarm]
+    confidence: 0.70
+
+  - id: R-019
+    name: clogged_filter
+    when:
+      - differential_pressure.band in [warn, alarm]
+      - flow_rate.band in [warn, alarm]
+    confidence: 0.85
