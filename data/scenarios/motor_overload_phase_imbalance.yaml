@@ -1,0 +1,46 @@
+scenario_id: motor_overload_phase_imbalance
+description: >
+  PUMP-05 motor has tripped on overload after sustained elevated current draw. Motor
+  current was at 58.5 A (39% above rated) before the trip. RPM has dropped below the
+  warn-low threshold indicating the motor was struggling to maintain speed under the
+  electrical imbalance. Vibration was elevated. Error code E-301 (motor current high —
+  overload trip) is active. The governing electrical isolation section (6.1) contains
+  a LOTO DANGER instruction that must appear verbatim in the system output.
+
+asset_id: PUMP-05
+asset_class: centrifugal_pump
+error_code: E-301
+
+input_snapshot:
+  vibration_rms: 4.8
+  bearing_temp_de: 76.5
+  bearing_temp_nde: 64.0
+  motor_current: 58.5
+  discharge_pressure: 5.9
+  flow_rate: 168.0
+  oil_level_pct: 73.0
+  rpm: 2815.0
+  suction_pressure: 0.72
+
+expected_deviations:
+  - sensor: motor_current
+    expected_band: alarm
+  - sensor: rpm
+    expected_band: warn
+  - sensor: bearing_temp_de
+    expected_band: warn
+  - sensor: vibration_rms
+    expected_band: warn
+
+gold_chunk_sections:
+  - ["7. Troubleshooting", "7.5 Motor Overload and Electrical Faults"]
+  - ["6. Electrical Procedures", "6.1 Lockout/Tagout for Motor Disconnect"]
+  - ["8. Error Code Reference Table"]
+
+required_safety_strings:
+  - "DANGER: De-energize and lock out the motor at the motor control centre (MCC) using an approved lockout device before removing the coupling guard or performing any work on rotating components."
+  - "DANGER: Do not reset an overload relay and restart the motor without first identifying and correcting the cause of the trip. Repeated tripping is a symptom of an underlying mechanical or electrical fault. Forcing a restart may cause motor winding failure, fire, or explosion."
+
+expected_top_hypothesis: "Motor overload and phase imbalance causing thermal trip; mechanical seizure or sustained electrical imbalance must be confirmed before restart"
+
+expects_refusal: false

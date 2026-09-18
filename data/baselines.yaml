@@ -1,0 +1,199 @@
+centrifugal_pump:
+  vibration_rms:
+    nominal: 2.5
+    min: 0.5
+    max: 11.0
+    warn_low: 0.5
+    warn_high: 4.5
+    alarm_low: 0.3
+    alarm_high: 7.0
+    unit: "mm/s"
+    source: "oem"
+
+  bearing_temp_de:
+    nominal: 65.0
+    min: 20.0
+    max: 100.0
+    warn_low: 40.0
+    warn_high: 75.0
+    alarm_low: 30.0
+    alarm_high: 85.0
+    unit: "C"
+    source: "oem"
+
+  bearing_temp_nde:
+    nominal: 60.0
+    min: 20.0
+    max: 95.0
+    warn_low: 38.0
+    warn_high: 72.0
+    alarm_low: 28.0
+    alarm_high: 82.0
+    unit: "C"
+    source: "oem"
+
+  motor_current:
+    nominal: 42.0
+    min: 0.0
+    max: 65.0
+    warn_low: 30.0
+    warn_high: 50.0
+    alarm_low: 25.0
+    alarm_high: 55.0
+    unit: "A"
+    source: "oem"
+
+  discharge_pressure:
+    nominal: 6.5
+    min: 0.5
+    max: 9.0
+    warn_low: 4.0
+    warn_high: 8.0
+    alarm_low: 3.0
+    alarm_high: 8.5
+    unit: "bar"
+    source: "oem"
+
+  flow_rate:
+    nominal: 185.0
+    min: 50.0
+    max: 260.0
+    warn_low: 120.0
+    warn_high: 230.0
+    alarm_low: 80.0
+    alarm_high: 245.0
+    unit: "m3/h"
+    source: "oem"
+
+  oil_level_pct:
+    nominal: 75.0
+    min: 0.0
+    max: 100.0
+    warn_low: 40.0
+    warn_high: 95.0
+    alarm_low: 25.0
+    alarm_high: 100.0
+    unit: "%"
+    source: "oem"
+
+  rpm:
+    nominal: 2950.0
+    min: 2700.0
+    max: 3100.0
+    warn_low: 2800.0
+    warn_high: 3000.0
+    alarm_low: 2750.0
+    alarm_high: 3050.0
+    unit: "rpm"
+    source: "oem"
+
+  suction_pressure:
+    nominal: 0.8
+    min: 0.05
+    max: 2.5
+    warn_low: 0.3
+    warn_high: 1.8
+    alarm_low: 0.2
+    alarm_high: 2.2
+    unit: "bar"
+    source: "oem"
+
+industrial_gearbox:
+  vibration_rms:
+    nominal: 1.8
+    min: 0.3
+    max: 9.0
+    warn_low: 0.3
+    warn_high: 3.5
+    alarm_low: 0.2
+    alarm_high: 5.5
+    unit: "mm/s"
+    source: "oem"
+
+  bearing_temp_de:
+    nominal: 55.0
+    min: 15.0
+    max: 90.0
+    warn_low: 35.0
+    warn_high: 65.0
+    alarm_low: 25.0
+    alarm_high: 75.0
+    unit: "C"
+    source: "oem"
+
+  bearing_temp_nde:
+    nominal: 50.0
+    min: 15.0
+    max: 85.0
+    warn_low: 32.0
+    warn_high: 62.0
+    alarm_low: 22.0
+    alarm_high: 72.0
+    unit: "C"
+    source: "oem"
+
+  motor_current:
+    nominal: 38.0
+    min: 0.0
+    max: 58.0
+    warn_low: 25.0
+    warn_high: 47.0
+    alarm_low: 20.0
+    alarm_high: 52.0
+    unit: "A"
+    source: "oem"
+
+  discharge_pressure:
+    nominal: 4.2
+    min: 0.5
+    max: 8.0
+    warn_low: 2.5
+    warn_high: 6.0
+    alarm_low: 1.5
+    alarm_high: 7.0
+    unit: "bar"
+    source: "oem"
+
+  flow_rate:
+    nominal: 120.0
+    min: 30.0
+    max: 180.0
+    warn_low: 70.0
+    warn_high: 155.0
+    alarm_low: 50.0
+    alarm_high: 170.0
+    unit: "m3/h"
+    source: "oem"
+
+  oil_level_pct:
+    nominal: 70.0
+    min: 0.0
+    max: 100.0
+    warn_low: 35.0
+    warn_high: 90.0
+    alarm_low: 20.0
+    alarm_high: 100.0
+    unit: "%"
+    source: "oem"
+
+  rpm:
+    nominal: 1475.0
+    min: 1350.0
+    max: 1560.0
+    warn_low: 1420.0
+    warn_high: 1520.0
+    alarm_low: 1390.0
+    alarm_high: 1540.0
+    unit: "rpm"
+    source: "oem"
+
+  suction_pressure:
+    nominal: 0.5
+    min: 0.05
+    max: 2.0
+    warn_low: 0.2
+    warn_high: 1.4
+    alarm_low: 0.1
+    alarm_high: 1.8
+    unit: "bar"
+    source: "oem"

@@ -1,0 +1,41 @@
+scenario_id: bearing_degradation
+description: >
+  Drive-end bearing on PUMP-02 is showing progressive degradation. Vibration RMS has
+  risen to 3.1x nominal over several weeks. Drive-end bearing temperature is elevated
+  into the alarm band (+24 °C above nominal). This combination is highly specific to
+  bearing spalling or lubrication starvation. Error code E-107 is active.
+
+asset_id: PUMP-02
+asset_class: centrifugal_pump
+error_code: E-107
+
+input_snapshot:
+  vibration_rms: 7.8
+  bearing_temp_de: 89.0
+  bearing_temp_nde: 68.5
+  motor_current: 45.2
+  discharge_pressure: 6.3
+  flow_rate: 181.0
+  oil_level_pct: 72.0
+  rpm: 2942.0
+  suction_pressure: 0.79
+
+expected_deviations:
+  - sensor: vibration_rms
+    expected_band: alarm
+  - sensor: bearing_temp_de
+    expected_band: alarm
+  - sensor: bearing_temp_nde
+    expected_band: warn
+
+gold_chunk_sections:
+  - ["7. Troubleshooting", "7.3 Excessive Vibration — Bearing Fault"]
+  - ["5. Maintenance", "5.2 Bearing Inspection and Replacement"]
+  - ["8. Error Code Reference Table"]
+
+required_safety_strings:
+  - "WARNING: Apply lockout/tagout to the motor starter per SOP-LOTO-01 before removing the bearing housing cover. Failure to de-energize may result in unexpected shaft rotation and serious injury."
+
+expected_top_hypothesis: "Drive-end bearing degradation due to spalling or lubrication starvation, with progressive vibration increase and thermal runaway risk"
+
+expects_refusal: false

@@ -1,0 +1,45 @@
+scenario_id: lubrication_failure
+description: >
+  PUMP-04 has an active lubrication failure. The bearing housing oil level has fallen to
+  the alarm-low band (22% on the sight glass) due to a small drain-plug leak that went
+  undetected over several weeks. Both bearing temperatures have risen sharply into the
+  alarm band. Vibration is elevated. Error code E-204 (lubrication pressure/oil level low)
+  is active. The governing gold section contains an explicit LOTO instruction that must
+  appear verbatim in the system output.
+
+asset_id: PUMP-04
+asset_class: centrifugal_pump
+error_code: E-204
+
+input_snapshot:
+  vibration_rms: 5.8
+  bearing_temp_de: 91.4
+  bearing_temp_nde: 83.5
+  motor_current: 43.8
+  discharge_pressure: 6.2
+  flow_rate: 180.0
+  oil_level_pct: 22.0
+  rpm: 2948.0
+  suction_pressure: 0.78
+
+expected_deviations:
+  - sensor: oil_level_pct
+    expected_band: alarm
+  - sensor: bearing_temp_de
+    expected_band: alarm
+  - sensor: bearing_temp_nde
+    expected_band: alarm
+  - sensor: vibration_rms
+    expected_band: warn
+
+gold_chunk_sections:
+  - ["7. Troubleshooting", "7.4 High Bearing Temperature"]
+  - ["5. Maintenance", "5.3 Lubrication and Oil Service"]
+  - ["8. Error Code Reference Table"]
+
+required_safety_strings:
+  - "DANGER: Isolate and lock out the motor circuit before opening the bearing housing or lubricant reservoir. Rotating components can cause entanglement even at slow speeds."
+
+expected_top_hypothesis: "Bearing lubrication starvation due to oil level at alarm-low threshold; sustained high-temperature operation risks imminent bearing seizure"
+
+expects_refusal: false

@@ -1,0 +1,44 @@
+scenario_id: clogged_filter
+description: >
+  PUMP-01 suction strainer is heavily blinded. Suction strainer differential pressure
+  has reached the alarm threshold. Suction pressure is low, compounding a secondary
+  cavitation risk. Flow rate is substantially reduced. Discharge pressure is below
+  warn-low due to insufficient suction flow to the impeller. Error code E-111 (suction
+  strainer DP high) is active.
+
+asset_id: PUMP-01
+asset_class: centrifugal_pump
+error_code: E-111
+
+input_snapshot:
+  vibration_rms: 3.1
+  bearing_temp_de: 66.5
+  bearing_temp_nde: 61.0
+  motor_current: 37.5
+  discharge_pressure: 4.1
+  flow_rate: 101.0
+  oil_level_pct: 74.0
+  rpm: 2944.0
+  suction_pressure: 0.22
+
+expected_deviations:
+  - sensor: suction_pressure
+    expected_band: alarm
+  - sensor: discharge_pressure
+    expected_band: warn
+  - sensor: flow_rate
+    expected_band: alarm
+  - sensor: vibration_rms
+    expected_band: warn
+
+gold_chunk_sections:
+  - ["7. Troubleshooting", "7.6 High Differential Pressure — Clogged Filter"]
+  - ["5. Maintenance", "5.5 Suction Strainer and Filter Service"]
+  - ["8. Error Code Reference Table"]
+
+required_safety_strings:
+  - "CAUTION: Do not operate the pump with the strainer element removed. Debris ingestion will damage the impeller and wear rings within minutes."
+
+expected_top_hypothesis: "Suction strainer severely clogged, restricting suction flow and causing reduced discharge pressure and flow rate with secondary cavitation risk"
+
+expects_refusal: false
