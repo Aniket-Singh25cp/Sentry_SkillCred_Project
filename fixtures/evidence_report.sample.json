@@ -1,0 +1,103 @@
+{
+  "asset_id": "PUMP-07",
+  "asset_class": "centrifugal_pump",
+  "captured_at": "2026-09-18T09:14:00Z",
+  "error_code": {
+    "code": "E-204",
+    "meaning": "Lubrication pressure low",
+    "status": "recognized"
+  },
+  "deviations": [
+    {
+      "sensor": "vibration_rms",
+      "value": 8.1,
+      "unit": "mm/s",
+      "nominal": 2.8,
+      "normal_range": [
+        0.0,
+        4.5
+      ],
+      "delta": 5.3,
+      "pct_dev": 1.8929,
+      "z_score": 5.4082,
+      "band": "alarm",
+      "severity": 96.0,
+      "trend": "rising",
+      "roc_per_min": 0.7,
+      "source": "learned_baseline"
+    },
+    {
+      "sensor": "bearing_temp_de",
+      "value": 91.4,
+      "unit": "C",
+      "nominal": 65.0,
+      "normal_range": [
+        55.0,
+        75.0
+      ],
+      "delta": 26.4,
+      "pct_dev": 0.4062,
+      "z_score": 4.8,
+      "band": "alarm",
+      "severity": 92.0,
+      "trend": "rising",
+      "roc_per_min": 0.5,
+      "source": "oem_config"
+    },
+    {
+      "sensor": "oil_level_pct",
+      "value": 21.0,
+      "unit": "%",
+      "nominal": 80.0,
+      "normal_range": [
+        60.0,
+        100.0
+      ],
+      "delta": -59.0,
+      "pct_dev": -0.7375,
+      "z_score": -11.8,
+      "band": "alarm",
+      "severity": 85.0,
+      "trend": "falling",
+      "roc_per_min": -0.2,
+      "source": "oem_config"
+    }
+  ],
+  "normal_sensors": [
+    "discharge_pressure",
+    "flow_rate",
+    "motor_current"
+  ],
+  "missing_sensors": [
+    "differential_pressure",
+    "rpm"
+  ],
+  "signatures": [
+    {
+      "name": "lubrication_failure",
+      "confidence": 0.9,
+      "rule_id": "R-017",
+      "basis": [
+        "bearing_temp_de",
+        "oil_level_pct"
+      ]
+    },
+    {
+      "name": "bearing_distress",
+      "confidence": 0.8,
+      "rule_id": "R-014",
+      "basis": [
+        "bearing_temp_de",
+        "vibration_rms"
+      ]
+    }
+  ],
+  "history_features": {
+    "days_since_service": 214,
+    "same_code_90d": 2,
+    "recent_parts": [
+      "gasket",
+      "oil_seal"
+    ]
+  }
+}

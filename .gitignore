@@ -1,30 +1,46 @@
-# Python
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *.pyo
 *.pyd
 *.pyc
+*.so
+*$py.class
 *.egg
 *.egg-info/
 dist/
 build/
 .eggs/
+develop-eggs/
+downloads/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+.installed.cfg
 
 # Virtual environments
 .venv/
 venv/
 env/
 ENV/
+env.bak/
+venv.bak/
 
-# Pytest
+# Pytest & Coverage
 .pytest_cache/
 .coverage
+.coverage.*
 htmlcov/
 
-# Qdrant local storage (runtime artefact – not source)
+# Qdrant local storage (runtime artifact – not source)
 qdrant_storage/
 
-# SQLite DB (runtime artefact – not source)
+# SQLite DB (runtime artifact – not source)
 *.db
 *.sqlite
 *.sqlite3
@@ -40,9 +56,11 @@ data/history/
 .DS_Store
 Thumbs.db
 
-# IDE
+# IDE / Editor
 .vscode/
 .idea/
+*.swp
+*.swo
 
 # Environment variables
 .env
